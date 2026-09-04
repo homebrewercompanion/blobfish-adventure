@@ -3,26 +3,32 @@
 A 3D underwater adventure game. Runs in any modern browser — no install, no app store,
 no downloads. Built for a tablet with touch controls, works with keyboard on a PC.
 
-## Getting it onto the tablet
+## How to run it
 
-The game uses ES modules, so it must be served over HTTP — opening `index.html`
-directly from the filesystem will not work.
+**Double-click `play.bat`.**
 
-**Option A — from this PC (quickest, PC must stay on):**
+That starts the local web server, opens the game on this PC, and prints the address
+to type on the tablet. Leave that black window open while playing; close it to stop.
 
-```sh
-cd H:/Blobfish-Adventure
-python -m http.server 8123 --bind 0.0.0.0
-```
+The game uses ES modules, so it has to be served over HTTP — double-clicking
+`index.html` will *not* work. That is the only reason the server is needed.
 
-Find the PC's LAN address (`ipconfig`, look for IPv4), then on the tablet open
-`http://<that-address>:8123/`. Both devices must be on the same Wi-Fi.
+### Playing on the tablet
 
-**Option B — GitHub Pages (best for a kid; always available, no PC needed):**
+`play.bat` prints something like `http://192.168.0.81:8123/`. Type that into Chrome
+on the tablet. Both devices must be on the same Wi-Fi, and the PC must stay on.
 
-Push this folder to a GitHub repo, then Settings → Pages → deploy from `main` / root.
-The tablet gets a permanent URL. In Chrome: menu → *Add to Home screen* — it then
-launches fullscreen like a real app.
+### Making it work without the PC (optional)
+
+The repo is private, and free GitHub Pages only serves **public** repos. To get a
+permanent URL that works any time:
+
+1. GitHub → the repo → Settings → General → bottom → *Change visibility* → Public
+2. Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)` → Save
+3. Wait about a minute for `https://homebrewercompanion.github.io/blobfish-adventure/`
+
+On the tablet, open that URL, then Chrome menu → *Add to Home screen*. It launches
+fullscreen like a real app, with no PC involved.
 
 ## Controls
 
