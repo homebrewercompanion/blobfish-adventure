@@ -3,32 +3,22 @@
 A 3D underwater adventure game. Runs in any modern browser — no install, no app store,
 no downloads. Built for a tablet with touch controls, works with keyboard on a PC.
 
-## How to run it
+## Play it
 
-**Double-click `play.bat`.**
+### https://homebrewercompanion.github.io/blobfish-adventure/
 
-That starts the local web server, opens the game on this PC, and prints the address
-to type on the tablet. Leave that black window open while playing; close it to stop.
+That is the real, always-on address — no PC needed. On the tablet, open it in Chrome,
+then menu → *Add to Home screen*. It launches fullscreen like a real app.
+
+Every push to `main` redeploys automatically, usually within a minute.
+
+### Running it locally (for changes)
+
+**Double-click `play.bat`.** It starts a local web server, opens the game, and prints
+the address to use on the tablet over Wi-Fi. Leave that window open while playing.
 
 The game uses ES modules, so it has to be served over HTTP — double-clicking
-`index.html` will *not* work. That is the only reason the server is needed.
-
-### Playing on the tablet
-
-`play.bat` prints something like `http://192.168.0.42:8123/` (yours will differ). Type that into Chrome
-on the tablet. Both devices must be on the same Wi-Fi, and the PC must stay on.
-
-### Making it work without the PC (optional)
-
-The repo is private, and free GitHub Pages only serves **public** repos. To get a
-permanent URL that works any time:
-
-1. GitHub → the repo → Settings → General → bottom → *Change visibility* → Public
-2. Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)` → Save
-3. Wait about a minute for `https://homebrewercompanion.github.io/blobfish-adventure/`
-
-On the tablet, open that URL, then Chrome menu → *Add to Home screen*. It launches
-fullscreen like a real app, with no PC involved.
+`index.html` will *not* work. That is the only reason the server exists.
 
 ## Controls
 
