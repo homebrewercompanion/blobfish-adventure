@@ -15,7 +15,7 @@ The game uses ES modules, so it has to be served over HTTP — double-clicking
 
 ### Playing on the tablet
 
-`play.bat` prints something like `http://192.168.0.81:8123/`. Type that into Chrome
+`play.bat` prints something like `http://192.168.0.42:8123/` (yours will differ). Type that into Chrome
 on the tablet. Both devices must be on the same Wi-Fi, and the PC must stay on.
 
 ### Making it work without the PC (optional)
